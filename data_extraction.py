@@ -16,4 +16,4 @@ data = response.content.decode("utf-8")
 
 df_data = pd.read_csv(StringIO(data))
 
-df_data.to_excel(f'data/Cases_Dengue_week_{current_week}.xlsx', index = False)
+df_data.to_csv(f'data/Cases_Dengue_week_{current_week}.csv', index = False)
